@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Kaic de Paula Duda</title>
+    <!-- O arquivo CSS está dentro da pasta css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light-mode"> <!-- Classe inicial do tema -->
+
+    <!-- Menu de Navegação Superior Fixo -->
+    <header>
+        <nav>
+            <div class="logo">Kaic.Dev</div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="theme-btn">Trocar Tema</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 1: SOBRE MIM -->
+        <section id="sobre" class="container">
+            <h1>Kaic de Paula Duda</h1>
+            <p>Olá! Sou o Kaic, acadêmico de <strong>Análise e Desenvolvimento de Sistemas</strong>.</p>
+            <p>Atualmente, dedico meus estudos ao domínio da linguagem <strong>Python com POO e SQLite3</strong>. Meu foco é construir uma base sólida em lógica e arquitetura de sistemas para migrar futuramente para o ecossistema C#.</p>
+            <p>Gosto de acompanhar Formula 1, jogar futebol e ler mangás nas horas vagas.</p>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO 2: FORMAÇÃO -->
+        <section id="formacao" class="container">
+            <h2>Formação Acadêmica</h2>
+            <div class="card">
+                <p><strong>Curso:</strong> Superior de Tecnologia em ADS (Em andamento)</p>
+                <p><strong>Instituição:</strong> Centro Universitário Internacional UNINTER</p>
+                <p><strong>Idiomas:</strong> Português (Nativo)</p>
+                <p><strong>Competências:</strong> Lógica de Programação, Programação Orientada a Objetos, Manipulação de JSON e Bancos de Dados Relacionais.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO 3: PORTFÓLIO (COM A FOTO) -->
+        <section id="portfolio" class="container">
+            <h2>Meus Projetos</h2>
+            
+            <!-- Card do Projeto Principal -->
+            <div class="projeto-card">
+                <h3>Bank Keke - Sistema de Gestão Bancária</h3>
+                
+                <!-- Exibição da Imagem (images/image01.png) -->
+                <div class="projeto-imagem">
+                    <img src="images/image01.png" alt="Demonstração do Sistema Bank Keke">
+                </div>
+
+                <div class="projeto-descricao">
+                    <p>Desenvolvimento de um simulador bancário robusto em Python, focado em lógica de negócios e persistência de dados.</p>
+                    <ul class="detalhes-tecnicos">
+                        <li><strong>Arquitetura:</strong> Uso de funções modulares e manipulação de arquivos JSON para armazenamento de contas.</li>
+                        <li><strong>Módulo de Investimento:</strong> Implementação do "KK Invest", utilizando a biblioteca <code>random</code> para cálculos de risco e ganhos variáveis.</li>
+                        <li><strong>Segurança:</strong> Sistema de validação de senhas, controle de saldo e tratamento de exceções (try/except).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Segundo Projeto -->
+            <div class="projeto-card">
+                <h3>Chatbot WhatsApp</h3>
+                <p>Criação de um bot automatizado para interações dinâmicas e fluxos de atendimento inteligente.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO 4: CONTATO (COM VALIDAÇÃO JS) -->
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <form id="contato-form">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Seu nome completo">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="5" placeholder="Olá Kaic, gostaria de falar sobre..."></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Kaic de Paula Duda | ADS UNINTER</p>
+    </footer>
+
+    <!-- Arquivo JS na raiz do projeto -->
+    <script src="script.js"></script>
+</body>
+</html>
